@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<style>
+	
+	#enlace { 
+		color: #0B0B61; 
+	}
+	#enlace:visted {
+ 	color: purple;
+  	}
+	h3{
+	text-align: center;
+	}
+	#titulo{
+	text-align: center;
+	font: bold 6em  Helvetica; 
+	position: static;
+
+	}
+	#titulo>p{
+	font: italic 0.8em  Helvetica; 
+	margin: 0;
+	position: static;
+
+
+	}
+	body{
+	background-color: #2E9AFE;
+	}
+	nav{
+		background-color: #04B45F;
+	}
+
+	img {
+    border: 2px solid grey;
+ 	margin: 0;
+	padding: 0;
+	border-radius: 800px;
+	overflow: hidden;
+    float: right;
+
+	}
+
+    #username{
+	border-radius: 10px;  
+    height: 30px;
+    width: 200px;
+    background: #CCC;
+    color: blue;
+    margin: 5px;
+    text-align: center;
+	}
+
+	#password{
+	border-radius: 10px;  
+    height: 30px;
+    width: 200px;
+    background: #CCC;
+    color: blue;
+    margin: 5px;
+    text-align: center;
+	}
+	#parametros{
+		text-align: center;
+	}
+	#btnentrar{
+		 border: 5px solid #333399;
+         border-radius: 10px;
+         color: #fff;
+         display: inline-block;
+         font: bold 12px/12px HelveticaNeue, Arial;
+         padding: 8px 11px;
+         text-decoration: blink;  
+         background-color: #333399;
+	}
+	#vinculo{
+		text-align: center;
+	}
+	article{
+		text-align: center;
+	}
+	h1>p::first-line{
+		font color= "green";
+
+	}
+	h1{
+	 text-align: center;
+	 position: static;
+	}
+	
+	</style>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
+<title>Login</title> 
+<link rel="stylesheet"  href="css/materialize.css">
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head> 
+
+
+<body> 
+	<nav>
+	<div class="nav-wrapper teal lighten-2">
+		<a href="#!" class="brand-logo"></a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse">
+		<i class="material-icons">menu</i>
+		</a>
+	<ul class="right hide-on-med-and-down">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="sinup.html"></a>Signup</li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+	<ul class="side-nav" id="mobile-demo">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="signup.html">Signup</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+		
+	</div>
+</nav>
+
+
+	<script src="js/materialize.js"></script>
+	<script >
+      $(document).ready(function(){
+      	$(".button-collapse").sideNav();
+      });
+	</script>
+	<br>
+	<br>
+
+	<section>
+	
+			 
+			 <div id="imagen"> <img src="#" alt="Aqui va una imagen">
+			 	<h1 id="titulo">Health <p><font color="green">is</font></p> Life </h1></div>
+     
+		
+
+		<h3>Por una vida mas saludable</h3>
+		<article> <p>Si ya cunetas con una cuenta por favor ingresa, si no es asi puedes iniciar creando una cuenta nueva </p></article>
+		
+	</section>
+
+<form name=login> 
+    
+    <div id="parametros">
+    	 <i class="material-icons">person_pin</i>Usuario:	<input type=text id="username" name= username />
+	 
+       <br>
+	    <i class="material-icons">lock</i> Contrase&ntilde;a: <input type=text id="password" name= password />
+	  <br>
+
+		<a class="waves-effect waves-light btn" href="pagina1.html">Iniciar</a>
+
+    </div> 
+    <br>
+    <p id="vinculo">No tienes cuenta, creala ahora mismo <a id="enlace" href="signup.html">Sign Up</a>
+
+    </p>
+     
+</form> 
+</body> 
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<meta charset="UTF-8">
+	<title>Datos</title>
+	<link rel="stylesheet"  href="css/materialize.css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	
+</head>
+<style >
+body {
+  font  : 21px sans-serif;
+
+  background : #2E9AFE;
+}
+
+#formulario {
+  position: relative;
+
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+
+  background: #088A68 ;
+}
+#h1 {
+  position : absolute;
+  left : 415px;
+  top  : 155px;
+ 
+  font : 1em  bold;
+}
+
+#peso {
+  position: absolute;
+  left : 390px;
+  top  : 220px;
+}
+
+#talla {
+  position: absolute;
+  left : 390px;
+  top  : 245px;
+}
+#altura{
+  position: absolute;
+  left : 390px;
+  top  : 268px;
+}
+#edad{
+  position: absolute;
+  left : 390px;
+  top  : 291px;
+}
+#sexo{
+  position: absolute;
+  left : 390px;
+  top  : 314px;
+}
+#message {
+  position: absolute;
+  left : 20px;
+  top  : 70px;
+}
+#etiq {
+  font : 1em sans-serif;
+  color: black;
+}
+#input, #msg {
+  font    : .9em/1.5em  sans-serif;
+
+  border  : none;
+  padding : 0 10px;
+  margin  : 0;
+  width   : 240px;
+
+  background: none;
+}
+#input:focus, #msg:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
+#input {
+    height: 2.5em; 
+    vertical-align: middle; 
+}
+#msg {
+  display : block;
+
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 340px;
+  height  : 360px;
+
+  resize  : none;
+  overflow: auto;
+}
+#button {
+  position     : absolute;
+  left         : 440px;
+  top          : 360px;
+
+  padding      : 5px;
+
+  font         : bold .6em sans-serif;
+ 
+  border-radius: 5px;
+  background   : #2E9AFE;
+
+  cursor       : pointer;
+
+}
+
+
+
+#button:hover,
+#button:focus {
+  outline   : none;
+  background:#A9D0F5 ;
+  color   : #2E9AFE;
+}
+</style>
+<body>
+	<nav>
+	<div class="nav-wrapper teal lighten-2">
+		<a href="#!" class="brand-logo"></a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse">
+		<i class="material-icons">menu</i>
+		</a>
+	<ul class="right hide-on-med-and-down">
+		<li><a href="index.html">Salir</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+	<ul class="side-nav" id="mobile-demo">
+		<li><a href="index.html">Salir</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+		
+	</div>
+</nav>
+
+<form id="formulario">
+  <h1 id="h1">Datos Personales</h1>
+
+  <div id="peso">
+    <label for="name" id="etiq">Peso:</label>
+    <input type="text" id="input" name="user_peso">
+  </div>
+
+  <div id="talla">
+    <label for="name" id="etiq">Talla:</label>
+    <input type="text" id="input" name="user_email">
+  </div>
+
+  <div id="altura">
+    <label for="name" id="etiq">Altura:</label>
+    <input type="text" id="input" name="user_altura">
+  </div>
+  <div id="edad">
+    <label for="name" id="etiq">Edad:</label>
+    <input type="text" id="input" name="user_edad">
+  </div>
+  <div id="sexo">
+    <label for="name" id="etiq">Sexo:</label>
+    <input type="text" id="input" name="user_sexo">
+  </div>
+   
+   
+   
+
+  <div id="message">
+    <label for="msg" id="etiq">Algo que te gustaria comentar acerca de tu salud:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+ 
+  <div class="button">
+   	<a class="waves-effect waves-light btn" href="pagina2.html" id="button">Iniciar</a>
+  </div>
+</form>
+
+	<script src="js/materialize.js"></script>
+	<script >
+      $(document).ready(function(){
+      	$(".button-collapse").sideNav();
+      });
+	</script>
+</body>
+</html>
